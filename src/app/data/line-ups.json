@@ -1,7 +1,7 @@
 {
   "get": "fixtures/lineups",
   "parameters": {
-    "fixture": "1224147"
+    "fixture": "1224148"
   },
   "errors": [],
   "results": 2,
@@ -12,228 +12,19 @@
   "response": [
     {
       "team": {
-        "id": 172,
-        "name": "VfB Stuttgart",
-        "logo": "https://media.api-sports.io/football/teams/172.png",
+        "id": 157,
+        "name": "Bayern München",
+        "logo": "https://media.api-sports.io/football/teams/157.png",
         "colors": {
           "player": {
-            "primary": "ffffff",
-            "number": "0b0a0a",
-            "border": "ffffff"
+            "primary": "cb0303",
+            "number": "151414",
+            "border": "cb0303"
           },
           "goalkeeper": {
-            "primary": "9919c9",
-            "number": "ffffff",
-            "border": "9919c9"
-          }
-        }
-      },
-      "formation": "4-4-2",
-      "startXI": [
-        {
-          "player": {
-            "id": 399,
-            "name": "Alexander Nübel",
-            "number": 33,
-            "pos": "G",
-            "grid": "1:1"
-          }
-        },
-        {
-          "player": {
-            "id": 48481,
-            "name": "Leonidas Stergiou",
-            "number": 20,
-            "pos": "D",
-            "grid": "2:4"
-          }
-        },
-        {
-          "player": {
-            "id": 129681,
-            "name": "Anthony Rouault",
-            "number": 29,
-            "pos": "D",
-            "grid": "2:3"
-          }
-        },
-        {
-          "player": {
-            "id": 323449,
-            "name": "Ameen Al-Dakhil",
-            "number": 2,
-            "pos": "D",
-            "grid": "2:2"
-          }
-        },
-        {
-          "player": {
-            "id": 135883,
-            "name": "Ramon Hendriks",
-            "number": 3,
-            "pos": "D",
-            "grid": "2:1"
-          }
-        },
-        {
-          "player": {
-            "id": 128533,
-            "name": "Jamie Leweling",
-            "number": 18,
-            "pos": "M",
-            "grid": "3:4"
-          }
-        },
-        {
-          "player": {
-            "id": 162887,
-            "name": "Enzo Millot",
-            "number": 8,
-            "pos": "M",
-            "grid": "3:3"
-          }
-        },
-        {
-          "player": {
-            "id": 137210,
-            "name": "Angelo Stiller",
-            "number": 6,
-            "pos": "M",
-            "grid": "3:2"
-          }
-        },
-        {
-          "player": {
-            "id": 158054,
-            "name": "Nick Woltemade",
-            "number": 11,
-            "pos": "M",
-            "grid": "3:1"
-          }
-        },
-        {
-          "player": {
-            "id": 46930,
-            "name": "Ermedin Demirović",
-            "number": 9,
-            "pos": "F",
-            "grid": "4:2"
-          }
-        },
-        {
-          "player": {
-            "id": 22,
-            "name": "Jacob Bruun Larsen",
-            "number": 25,
-            "pos": "F",
-            "grid": "4:1"
-          }
-        }
-      ],
-      "substitutes": [
-        {
-          "player": {
-            "id": 178217,
-            "name": "Stefan Drljača",
-            "number": 21,
-            "pos": "G",
-            "grid": null
-          }
-        },
-        {
-          "player": {
-            "id": 25597,
-            "name": "Fabian Bredlow",
-            "number": 1,
-            "pos": "G",
-            "grid": null
-          }
-        },
-        {
-          "player": {
-            "id": 24868,
-            "name": "Josha Vagnoman",
-            "number": 4,
-            "pos": "D",
-            "grid": null
-          }
-        },
-        {
-          "player": {
-            "id": 26244,
-            "name": "Pascal Stenzel",
-            "number": 15,
-            "pos": "D",
-            "grid": null
-          }
-        },
-        {
-          "player": {
-            "id": 25342,
-            "name": "Maximilian Mittelstädt",
-            "number": 7,
-            "pos": "D",
-            "grid": null
-          }
-        },
-        {
-          "player": {
-            "id": 178093,
-            "name": "Yannik Keitel",
-            "number": 5,
-            "pos": "M",
-            "grid": null
-          }
-        },
-        {
-          "player": {
-            "id": 163032,
-            "name": "Fabian Rieder",
-            "number": 32,
-            "pos": "M",
-            "grid": null
-          }
-        },
-        {
-          "player": {
-            "id": 24798,
-            "name": "Chris Führich",
-            "number": 27,
-            "pos": "M",
-            "grid": null
-          }
-        },
-        {
-          "player": {
-            "id": 26475,
-            "name": "Deniz Undav",
-            "number": 26,
-            "pos": "F",
-            "grid": null
-          }
-        }
-      ],
-      "coach": {
-        "id": 1399,
-        "name": "S. Hoeneß",
-        "photo": "https://media.api-sports.io/football/coachs/1399.png"
-      }
-    },
-    {
-      "team": {
-        "id": 163,
-        "name": "Borussia Mönchengladbach",
-        "logo": "https://media.api-sports.io/football/teams/163.png",
-        "colors": {
-          "player": {
-            "primary": "ffffff",
-            "number": "050505",
-            "border": "ffffff"
-          },
-          "goalkeeper": {
-            "primary": "dddd0e",
-            "number": "0d0d0d",
-            "border": "dddd0e"
+            "primary": "05db0d",
+            "number": "eee9e7",
+            "border": "05db0d"
           }
         }
       },
@@ -241,99 +32,99 @@
       "startXI": [
         {
           "player": {
-            "id": 25626,
-            "name": "Moritz Nicolas",
-            "number": 33,
+            "id": 497,
+            "name": "Manuel Neuer",
+            "number": 1,
             "pos": "G",
             "grid": "1:1"
           }
         },
         {
           "player": {
-            "id": 50852,
-            "name": "Joseph Scally",
-            "number": 29,
+            "id": 1157,
+            "name": "Konrad Laimer",
+            "number": 27,
             "pos": "D",
             "grid": "2:4"
           }
         },
         {
           "player": {
-            "id": 38114,
-            "name": "Ko Itakura",
-            "number": 3,
+            "id": 1149,
+            "name": "Dayot Upamecano",
+            "number": 2,
             "pos": "D",
             "grid": "2:3"
           }
         },
         {
           "player": {
-            "id": 2803,
-            "name": "Nico Elvedi",
-            "number": 30,
+            "id": 2897,
+            "name": "Min-jae Kim",
+            "number": 3,
             "pos": "D",
             "grid": "2:2"
           }
         },
         {
           "player": {
-            "id": 327646,
-            "name": "Lukas Ullrich",
-            "number": 26,
+            "id": 8,
+            "name": "Raphaël Guerreiro",
+            "number": 22,
             "pos": "D",
             "grid": "2:1"
           }
         },
         {
           "player": {
-            "id": 24969,
-            "name": "Philipp Sander",
-            "number": 16,
+            "id": 502,
+            "name": "Joshua Kimmich",
+            "number": 6,
             "pos": "M",
             "grid": "3:2"
           }
         },
         {
           "player": {
-            "id": 19,
-            "name": "Julian Weigl",
-            "number": 8,
+            "id": 328033,
+            "name": "Aleksandar Pavlović",
+            "number": 45,
             "pos": "M",
             "grid": "3:1"
           }
         },
         {
           "player": {
-            "id": 22148,
-            "name": "Nathan N'Goumou",
-            "number": 19,
+            "id": 19617,
+            "name": "Michael Olise",
+            "number": 17,
             "pos": "M",
             "grid": "4:3"
           }
         },
         {
           "player": {
-            "id": 25461,
-            "name": "Kevin Stöger",
-            "number": 7,
+            "id": 181812,
+            "name": "Jamal Musiala",
+            "number": 42,
             "pos": "M",
             "grid": "4:2"
           }
         },
         {
           "player": {
-            "id": 725,
-            "name": "Robin Hack",
-            "number": 25,
+            "id": 508,
+            "name": "Kingsley Coman",
+            "number": 11,
             "pos": "M",
             "grid": "4:1"
           }
         },
         {
           "player": {
-            "id": 26256,
-            "name": "Tim Kleindienst",
-            "number": 11,
+            "id": 184,
+            "name": "Harry Kane",
+            "number": 9,
             "pos": "F",
             "grid": "5:1"
           }
@@ -342,90 +133,299 @@
       "substitutes": [
         {
           "player": {
-            "id": 2801,
-            "name": "Jonas Omlin",
-            "number": 1,
+            "id": 510,
+            "name": "Serge Gnabry",
+            "number": 7,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 644,
+            "name": "Leroy Sané",
+            "number": 10,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 522,
+            "name": "Thomas Müller",
+            "number": 25,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 41104,
+            "name": "João Palhinha",
+            "number": 16,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 203376,
+            "name": "Jonas Urbig",
+            "number": 40,
             "pos": "G",
             "grid": null
           }
         },
         {
           "player": {
-            "id": 163069,
-            "name": "Luca Netz",
-            "number": 20,
+            "id": 125171,
+            "name": "Josip Stanišić",
+            "number": 44,
             "pos": "D",
             "grid": null
           }
         },
         {
           "player": {
-            "id": 322627,
-            "name": "Fabio Chiarodia",
-            "number": 2,
+            "id": 2195,
+            "name": "Sacha Boey",
+            "number": 23,
             "pos": "D",
             "grid": null
           }
         },
         {
           "player": {
-            "id": 1082,
-            "name": "Stefan Lainer",
-            "number": 22,
+            "id": 431921,
+            "name": "Adam Aznou",
+            "number": 49,
             "pos": "D",
             "grid": null
           }
         },
         {
           "player": {
-            "id": 24839,
-            "name": "Marvin Friedrich",
-            "number": 5,
+            "id": 175,
+            "name": "Eric Dier",
+            "number": 15,
             "pos": "D",
-            "grid": null
-          }
-        },
-        {
-          "player": {
-            "id": 25638,
-            "name": "Florian Neuhaus",
-            "number": 10,
-            "pos": "M",
-            "grid": null
-          }
-        },
-        {
-          "player": {
-            "id": 442151,
-            "name": "Niklas Swider",
-            "number": 39,
-            "pos": "M",
-            "grid": null
-          }
-        },
-        {
-          "player": {
-            "id": 80434,
-            "name": "Tomáš Čvančara",
-            "number": 31,
-            "pos": "F",
-            "grid": null
-          }
-        },
-        {
-          "player": {
-            "id": 405112,
-            "name": "Shio Fukuda",
-            "number": 13,
-            "pos": "F",
             "grid": null
           }
         }
       ],
       "coach": {
-        "id": 2017,
-        "name": "G. Seoane",
-        "photo": "https://media.api-sports.io/football/coachs/2017.png"
+        "id": 12590,
+        "name": "V. Kompany",
+        "photo": "https://media.api-sports.io/football/coachs/12590.png"
+      }
+    },
+    {
+      "team": {
+        "id": 191,
+        "name": "Holstein Kiel",
+        "logo": "https://media.api-sports.io/football/teams/191.png",
+        "colors": {
+          "player": {
+            "primary": "ffffff",
+            "number": "0e77bf",
+            "border": "ffffff"
+          },
+          "goalkeeper": {
+            "primary": "f5f100",
+            "number": "0d0d0d",
+            "border": "f5f100"
+          }
+        }
+      },
+      "formation": "5-4-1",
+      "startXI": [
+        {
+          "player": {
+            "id": 24952,
+            "name": "Timon Weiner",
+            "number": 1,
+            "pos": "G",
+            "grid": "1:1"
+          }
+        },
+        {
+          "player": {
+            "id": 202580,
+            "name": "Lasse Rosenboom",
+            "number": 23,
+            "pos": "D",
+            "grid": "2:5"
+          }
+        },
+        {
+          "player": {
+            "id": 90977,
+            "name": "Timo Becker",
+            "number": 17,
+            "pos": "D",
+            "grid": "2:4"
+          }
+        },
+        {
+          "player": {
+            "id": 41578,
+            "name": "David Zec",
+            "number": 26,
+            "pos": "D",
+            "grid": "2:3"
+          }
+        },
+        {
+          "player": {
+            "id": 26453,
+            "name": "Marco Komenda",
+            "number": 3,
+            "pos": "D",
+            "grid": "2:2"
+          }
+        },
+        {
+          "player": {
+            "id": 119002,
+            "name": "John Tolkin",
+            "number": 47,
+            "pos": "D",
+            "grid": "2:1"
+          }
+        },
+        {
+          "player": {
+            "id": 26525,
+            "name": "Finn Porath",
+            "number": 8,
+            "pos": "M",
+            "grid": "3:4"
+          }
+        },
+        {
+          "player": {
+            "id": 24876,
+            "name": "Lewis Holtby",
+            "number": 10,
+            "pos": "M",
+            "grid": "3:3"
+          }
+        },
+        {
+          "player": {
+            "id": 70514,
+            "name": "Armin Gigović",
+            "number": 37,
+            "pos": "M",
+            "grid": "3:2"
+          }
+        },
+        {
+          "player": {
+            "id": 265386,
+            "name": "Dominik Javorček",
+            "number": 33,
+            "pos": "M",
+            "grid": "3:1"
+          }
+        },
+        {
+          "player": {
+            "id": 202514,
+            "name": "Phil Harres",
+            "number": 19,
+            "pos": "F",
+            "grid": "4:1"
+          }
+        }
+      ],
+      "substitutes": [
+        {
+          "player": {
+            "id": 39315,
+            "name": "Magnus Knudsen",
+            "number": 24,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 424,
+            "name": "Steven Skrzybski",
+            "number": 7,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 24887,
+            "name": "Jann-Fiete Arp",
+            "number": 20,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 40271,
+            "name": "Thomas Dähne",
+            "number": 21,
+            "pos": "G",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 162720,
+            "name": "Max Geschwill",
+            "number": 14,
+            "pos": "D",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 306338,
+            "name": "Marko Ivezić",
+            "number": 6,
+            "pos": "M",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 106851,
+            "name": "Shuto Machino",
+            "number": 18,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 7305,
+            "name": "Benedikt Pichler",
+            "number": 9,
+            "pos": "F",
+            "grid": null
+          }
+        },
+        {
+          "player": {
+            "id": 201351,
+            "name": "Andu Yobel Kelati",
+            "number": 16,
+            "pos": "M",
+            "grid": null
+          }
+        }
+      ],
+      "coach": {
+        "id": 5348,
+        "name": "M. Rapp",
+        "photo": "https://media.api-sports.io/football/coachs/5348.png"
       }
     }
   ]

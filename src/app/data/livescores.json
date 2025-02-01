@@ -1,0 +1,1060 @@
+[
+  {
+    "fixture": {
+      "id": 1224147,
+      "referee": "Robert Hartmann, Germany",
+      "timezone": "UTC",
+      "date": "2025-02-01T14:30:00+00:00",
+      "timestamp": 1738420200,
+      "periods": {
+        "first": 1738420200,
+        "second": null
+      },
+      "venue": {
+        "id": 20473,
+        "name": "MHPArena",
+        "city": "Stuttgart"
+      },
+      "status": {
+        "long": "First Half",
+        "short": "1H",
+        "elapsed": 21,
+        "extra": null
+      }
+    },
+    "league": {
+      "id": 78,
+      "name": "Bundesliga",
+      "country": "Germany",
+      "logo": "https://media.api-sports.io/football/leagues/78.png",
+      "flag": "https://media.api-sports.io/flags/de.svg",
+      "season": 2024,
+      "round": "Regular Season - 20",
+      "standings": true
+    },
+    "teams": {
+      "home": {
+        "id": 172,
+        "name": "VfB Stuttgart",
+        "logo": "https://media.api-sports.io/football/teams/172.png",
+        "winner": null
+      },
+      "away": {
+        "id": 163,
+        "name": "Borussia Mönchengladbach",
+        "logo": "https://media.api-sports.io/football/teams/163.png",
+        "winner": null
+      }
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    },
+    "score": {
+      "halftime": {
+        "home": 0,
+        "away": 0
+      },
+      "fulltime": {
+        "home": null,
+        "away": null
+      },
+      "extratime": {
+        "home": null,
+        "away": null
+      },
+      "penalty": {
+        "home": null,
+        "away": null
+      }
+    },
+    "events": []
+  },
+  {
+    "fixture": {
+      "id": 1224148,
+      "referee": "Florian Exner, Germany",
+      "timezone": "UTC",
+      "date": "2025-02-01T14:30:00+00:00",
+      "timestamp": 1738420200,
+      "periods": {
+        "first": 1738420200,
+        "second": null
+      },
+      "venue": {
+        "id": 700,
+        "name": "Allianz Arena",
+        "city": "München"
+      },
+      "status": {
+        "long": "First Half",
+        "short": "1H",
+        "elapsed": 21,
+        "extra": null
+      }
+    },
+    "league": {
+      "id": 78,
+      "name": "Bundesliga",
+      "country": "Germany",
+      "logo": "https://media.api-sports.io/football/leagues/78.png",
+      "flag": "https://media.api-sports.io/flags/de.svg",
+      "season": 2024,
+      "round": "Regular Season - 20",
+      "standings": true
+    },
+    "teams": {
+      "home": {
+        "id": 157,
+        "name": "Bayern München",
+        "logo": "https://media.api-sports.io/football/teams/157.png",
+        "winner": true
+      },
+      "away": {
+        "id": 191,
+        "name": "Holstein Kiel",
+        "logo": "https://media.api-sports.io/football/teams/191.png",
+        "winner": false
+      }
+    },
+    "goals": {
+      "home": 1,
+      "away": 0
+    },
+    "score": {
+      "halftime": {
+        "home": 1,
+        "away": 0
+      },
+      "fulltime": {
+        "home": null,
+        "away": null
+      },
+      "extratime": {
+        "home": null,
+        "away": null
+      },
+      "penalty": {
+        "home": null,
+        "away": null
+      }
+    },
+    "events": [
+      {
+        "time": {
+          "elapsed": 19,
+          "extra": null
+        },
+        "team": {
+          "id": 157,
+          "name": "Bayern München",
+          "logo": "https://media.api-sports.io/football/teams/157.png"
+        },
+        "player": {
+          "id": 181812,
+          "name": "J. Musiala"
+        },
+        "assist": {
+          "id": 19617,
+          "name": "M. Olise"
+        },
+        "type": "Goal",
+        "detail": "Normal Goal",
+        "comments": null
+      }
+    ]
+  },
+  {
+    "fixture": {
+      "id": 1224150,
+      "referee": "Frank Willenborg, Germany",
+      "timezone": "UTC",
+      "date": "2025-02-01T14:30:00+00:00",
+      "timestamp": 1738420200,
+      "periods": {
+        "first": 1738420200,
+        "second": null
+      },
+      "venue": {
+        "id": 723,
+        "name": "Voith-Arena",
+        "city": "Heidenheim an der Brenz"
+      },
+      "status": {
+        "long": "First Half",
+        "short": "1H",
+        "elapsed": 21,
+        "extra": null
+      }
+    },
+    "league": {
+      "id": 78,
+      "name": "Bundesliga",
+      "country": "Germany",
+      "logo": "https://media.api-sports.io/football/leagues/78.png",
+      "flag": "https://media.api-sports.io/flags/de.svg",
+      "season": 2024,
+      "round": "Regular Season - 20",
+      "standings": true
+    },
+    "teams": {
+      "home": {
+        "id": 180,
+        "name": "1. FC Heidenheim",
+        "logo": "https://media.api-sports.io/football/teams/180.png",
+        "winner": null
+      },
+      "away": {
+        "id": 165,
+        "name": "Borussia Dortmund",
+        "logo": "https://media.api-sports.io/football/teams/165.png",
+        "winner": null
+      }
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    },
+    "score": {
+      "halftime": {
+        "home": 0,
+        "away": 0
+      },
+      "fulltime": {
+        "home": null,
+        "away": null
+      },
+      "extratime": {
+        "home": null,
+        "away": null
+      },
+      "penalty": {
+        "home": null,
+        "away": null
+      }
+    },
+    "events": [
+      {
+        "time": {
+          "elapsed": 14,
+          "extra": null
+        },
+        "team": {
+          "id": 165,
+          "name": "Borussia Dortmund",
+          "logo": "https://media.api-sports.io/football/teams/165.png"
+        },
+        "player": {
+          "id": 368230,
+          "name": "J. Duranville"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": "Delay of game"
+      }
+    ]
+  },
+  {
+    "fixture": {
+      "id": 1224153,
+      "referee": "Tobias Welz, Germany",
+      "timezone": "UTC",
+      "date": "2025-02-01T14:30:00+00:00",
+      "timestamp": 1738420200,
+      "periods": {
+        "first": 1738420200,
+        "second": null
+      },
+      "venue": {
+        "id": 751,
+        "name": "Vonovia Ruhrstadion",
+        "city": "Bochum"
+      },
+      "status": {
+        "long": "First Half",
+        "short": "1H",
+        "elapsed": 21,
+        "extra": null
+      }
+    },
+    "league": {
+      "id": 78,
+      "name": "Bundesliga",
+      "country": "Germany",
+      "logo": "https://media.api-sports.io/football/leagues/78.png",
+      "flag": "https://media.api-sports.io/flags/de.svg",
+      "season": 2024,
+      "round": "Regular Season - 20",
+      "standings": true
+    },
+    "teams": {
+      "home": {
+        "id": 176,
+        "name": "VfL Bochum",
+        "logo": "https://media.api-sports.io/football/teams/176.png",
+        "winner": null
+      },
+      "away": {
+        "id": 160,
+        "name": "SC Freiburg",
+        "logo": "https://media.api-sports.io/football/teams/160.png",
+        "winner": null
+      }
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    },
+    "score": {
+      "halftime": {
+        "home": 0,
+        "away": 0
+      },
+      "fulltime": {
+        "home": null,
+        "away": null
+      },
+      "extratime": {
+        "home": null,
+        "away": null
+      },
+      "penalty": {
+        "home": null,
+        "away": null
+      }
+    },
+    "events": []
+  },
+  {
+    "fixture": {
+      "id": 1224154,
+      "referee": "Tobias Reichel, Germany",
+      "timezone": "UTC",
+      "date": "2025-02-01T14:30:00+00:00",
+      "timestamp": 1738420200,
+      "periods": {
+        "first": 1738420200,
+        "second": null
+      },
+      "venue": {
+        "id": 745,
+        "name": "Millerntor-Stadion",
+        "city": "Hamburg"
+      },
+      "status": {
+        "long": "First Half",
+        "short": "1H",
+        "elapsed": 21,
+        "extra": null
+      }
+    },
+    "league": {
+      "id": 78,
+      "name": "Bundesliga",
+      "country": "Germany",
+      "logo": "https://media.api-sports.io/football/leagues/78.png",
+      "flag": "https://media.api-sports.io/flags/de.svg",
+      "season": 2024,
+      "round": "Regular Season - 20",
+      "standings": true
+    },
+    "teams": {
+      "home": {
+        "id": 186,
+        "name": "FC St. Pauli",
+        "logo": "https://media.api-sports.io/football/teams/186.png",
+        "winner": true
+      },
+      "away": {
+        "id": 170,
+        "name": "FC Augsburg",
+        "logo": "https://media.api-sports.io/football/teams/170.png",
+        "winner": false
+      }
+    },
+    "goals": {
+      "home": 1,
+      "away": 0
+    },
+    "score": {
+      "halftime": {
+        "home": 1,
+        "away": 0
+      },
+      "fulltime": {
+        "home": null,
+        "away": null
+      },
+      "extratime": {
+        "home": null,
+        "away": null
+      },
+      "penalty": {
+        "home": null,
+        "away": null
+      }
+    },
+    "events": [
+      {
+        "time": {
+          "elapsed": 17,
+          "extra": null
+        },
+        "team": {
+          "id": 186,
+          "name": "FC St. Pauli",
+          "logo": "https://media.api-sports.io/football/teams/186.png"
+        },
+        "player": {
+          "id": 178769,
+          "name": "P. Treu"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Goal",
+        "detail": "Normal Goal",
+        "comments": null
+      }
+    ]
+  },
+  {
+    "fixture": {
+      "id": 1208684,
+      "referee": "Ricardo De Burgos Bengoetxea, Spain",
+      "timezone": "UTC",
+      "date": "2025-02-01T13:00:00+00:00",
+      "timestamp": 1738414800,
+      "periods": {
+        "first": 1738414800,
+        "second": 1738418400
+      },
+      "venue": {
+        "id": 20422,
+        "name": "Estadio Coliseum",
+        "city": "Getafe"
+      },
+      "status": {
+        "long": "Second Half",
+        "short": "2H",
+        "elapsed": 90,
+        "extra": 2
+      }
+    },
+    "league": {
+      "id": 140,
+      "name": "La Liga",
+      "country": "Spain",
+      "logo": "https://media.api-sports.io/football/leagues/140.png",
+      "flag": "https://media.api-sports.io/flags/es.svg",
+      "season": 2024,
+      "round": "Regular Season - 22",
+      "standings": true
+    },
+    "teams": {
+      "home": {
+        "id": 546,
+        "name": "Getafe",
+        "logo": "https://media.api-sports.io/football/teams/546.png",
+        "winner": null
+      },
+      "away": {
+        "id": 536,
+        "name": "Sevilla",
+        "logo": "https://media.api-sports.io/football/teams/536.png",
+        "winner": null
+      }
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    },
+    "score": {
+      "halftime": {
+        "home": 0,
+        "away": 0
+      },
+      "fulltime": {
+        "home": null,
+        "away": null
+      },
+      "extratime": {
+        "home": null,
+        "away": null
+      },
+      "penalty": {
+        "home": null,
+        "away": null
+      }
+    },
+    "events": [
+      {
+        "time": {
+          "elapsed": 20,
+          "extra": null
+        },
+        "team": {
+          "id": 536,
+          "name": "Sevilla",
+          "logo": "https://media.api-sports.io/football/teams/536.png"
+        },
+        "player": {
+          "id": 185398,
+          "name": "I. Romero"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": "Unsportsmanlike conduct"
+      },
+      {
+        "time": {
+          "elapsed": 24,
+          "extra": null
+        },
+        "team": {
+          "id": 536,
+          "name": "Sevilla",
+          "logo": "https://media.api-sports.io/football/teams/536.png"
+        },
+        "player": {
+          "id": 48,
+          "name": "S. Niguez"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": "Roughing"
+      },
+      {
+        "time": {
+          "elapsed": 26,
+          "extra": null
+        },
+        "team": {
+          "id": 546,
+          "name": "Getafe",
+          "logo": "https://media.api-sports.io/football/teams/546.png"
+        },
+        "player": {
+          "id": 309364,
+          "name": "C. Gomez da Costa"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": "Holding"
+      },
+      {
+        "time": {
+          "elapsed": 37,
+          "extra": null
+        },
+        "team": {
+          "id": 546,
+          "name": "Getafe",
+          "logo": "https://media.api-sports.io/football/teams/546.png"
+        },
+        "player": {
+          "id": 2039,
+          "name": "J. Berrocal"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": "Holding"
+      },
+      {
+        "time": {
+          "elapsed": 38,
+          "extra": null
+        },
+        "team": {
+          "id": 546,
+          "name": "Getafe",
+          "logo": "https://media.api-sports.io/football/teams/546.png"
+        },
+        "player": {
+          "id": 47250,
+          "name": "Djene"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": "Roughing"
+      },
+      {
+        "time": {
+          "elapsed": 46,
+          "extra": null
+        },
+        "team": {
+          "id": 546,
+          "name": "Getafe",
+          "logo": "https://media.api-sports.io/football/teams/546.png"
+        },
+        "player": {
+          "id": 47472,
+          "name": "B. Mayoral"
+        },
+        "assist": {
+          "id": 309364,
+          "name": "C. Gomez da Costa"
+        },
+        "type": "subst",
+        "detail": "Substitution 1",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 50,
+          "extra": null
+        },
+        "team": {
+          "id": 536,
+          "name": "Sevilla",
+          "logo": "https://media.api-sports.io/football/teams/536.png"
+        },
+        "player": {
+          "id": 25458,
+          "name": "D. Lukebakio"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": "Foul"
+      },
+      {
+        "time": {
+          "elapsed": 54,
+          "extra": null
+        },
+        "team": {
+          "id": 536,
+          "name": "Sevilla",
+          "logo": "https://media.api-sports.io/football/teams/536.png"
+        },
+        "player": {
+          "id": 1427,
+          "name": "A. S. Lokonga"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": "Tripping"
+      },
+      {
+        "time": {
+          "elapsed": 56,
+          "extra": null
+        },
+        "team": {
+          "id": 546,
+          "name": "Getafe",
+          "logo": "https://media.api-sports.io/football/teams/546.png"
+        },
+        "player": {
+          "id": 119742,
+          "name": "J. Iglesias"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": "Holding"
+      },
+      {
+        "time": {
+          "elapsed": 76,
+          "extra": null
+        },
+        "team": {
+          "id": 536,
+          "name": "Sevilla",
+          "logo": "https://media.api-sports.io/football/teams/536.png"
+        },
+        "player": {
+          "id": 297311,
+          "name": "K. Salas"
+        },
+        "assist": {
+          "id": 47329,
+          "name": "A. Pedrosa"
+        },
+        "type": "subst",
+        "detail": "Substitution 1",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 76,
+          "extra": null
+        },
+        "team": {
+          "id": 536,
+          "name": "Sevilla",
+          "logo": "https://media.api-sports.io/football/teams/536.png"
+        },
+        "player": {
+          "id": 39121,
+          "name": "C. Ejuke"
+        },
+        "assist": {
+          "id": 48471,
+          "name": "R. Vargas"
+        },
+        "type": "subst",
+        "detail": "Substitution 2",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 77,
+          "extra": null
+        },
+        "team": {
+          "id": 546,
+          "name": "Getafe",
+          "logo": "https://media.api-sports.io/football/teams/546.png"
+        },
+        "player": {
+          "id": 47306,
+          "name": "A. Sola"
+        },
+        "assist": {
+          "id": 67955,
+          "name": "C. Perez"
+        },
+        "type": "subst",
+        "detail": "Substitution 2",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 77,
+          "extra": null
+        },
+        "team": {
+          "id": 546,
+          "name": "Getafe",
+          "logo": "https://media.api-sports.io/football/teams/546.png"
+        },
+        "player": {
+          "id": 143,
+          "name": "C. Alena"
+        },
+        "assist": {
+          "id": 403554,
+          "name": "C. Uche"
+        },
+        "type": "subst",
+        "detail": "Substitution 3",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 81,
+          "extra": null
+        },
+        "team": {
+          "id": 536,
+          "name": "Sevilla",
+          "logo": "https://media.api-sports.io/football/teams/536.png"
+        },
+        "player": {
+          "id": 57446,
+          "name": "A. Adams"
+        },
+        "assist": {
+          "id": 48,
+          "name": "S. Niguez"
+        },
+        "type": "subst",
+        "detail": "Substitution 3",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 90,
+          "extra": 1
+        },
+        "team": {
+          "id": 536,
+          "name": "Sevilla",
+          "logo": "https://media.api-sports.io/football/teams/536.png"
+        },
+        "player": {
+          "id": 195923,
+          "name": "J. A. Carmona"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 90,
+          "extra": 2
+        },
+        "team": {
+          "id": 546,
+          "name": "Getafe",
+          "logo": "https://media.api-sports.io/football/teams/546.png"
+        },
+        "player": {
+          "id": 343202,
+          "name": "A. Rodriguez"
+        },
+        "assist": {
+          "id": 47320,
+          "name": "Juanmi"
+        },
+        "type": "subst",
+        "detail": "Substitution 4",
+        "comments": null
+      }
+    ]
+  },
+  {
+    "fixture": {
+      "id": 1223821,
+      "referee": "Massa, Davide, Italy",
+      "timezone": "UTC",
+      "date": "2025-02-01T14:00:00+00:00",
+      "timestamp": 1738418400,
+      "periods": {
+        "first": 1738418400,
+        "second": null
+      },
+      "venue": {
+        "id": 12086,
+        "name": "U-Power Stadium",
+        "city": "Monza"
+      },
+      "status": {
+        "long": "Halftime",
+        "short": "HT",
+        "elapsed": 45,
+        "extra": 1
+      }
+    },
+    "league": {
+      "id": 135,
+      "name": "Serie A",
+      "country": "Italy",
+      "logo": "https://media.api-sports.io/football/leagues/135.png",
+      "flag": "https://media.api-sports.io/flags/it.svg",
+      "season": 2024,
+      "round": "Regular Season - 23",
+      "standings": true
+    },
+    "teams": {
+      "home": {
+        "id": 1579,
+        "name": "Monza",
+        "logo": "https://media.api-sports.io/football/teams/1579.png",
+        "winner": false
+      },
+      "away": {
+        "id": 504,
+        "name": "Verona",
+        "logo": "https://media.api-sports.io/football/teams/504.png",
+        "winner": true
+      }
+    },
+    "goals": {
+      "home": 0,
+      "away": 1
+    },
+    "score": {
+      "halftime": {
+        "home": 0,
+        "away": 1
+      },
+      "fulltime": {
+        "home": null,
+        "away": null
+      },
+      "extratime": {
+        "home": null,
+        "away": null
+      },
+      "penalty": {
+        "home": null,
+        "away": null
+      }
+    },
+    "events": [
+      {
+        "time": {
+          "elapsed": 13,
+          "extra": null
+        },
+        "team": {
+          "id": 504,
+          "name": "Verona",
+          "logo": "https://media.api-sports.io/football/teams/504.png"
+        },
+        "player": {
+          "id": null,
+          "name": "S. Lekovic"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Goal",
+        "detail": "Own Goal",
+        "comments": null
+      },
+      {
+        "time": {
+          "elapsed": 29,
+          "extra": null
+        },
+        "team": {
+          "id": 504,
+          "name": "Verona",
+          "logo": "https://media.api-sports.io/football/teams/504.png"
+        },
+        "player": {
+          "id": 59421,
+          "name": "D. Mosquera"
+        },
+        "assist": {
+          "id": null,
+          "name": null
+        },
+        "type": "Card",
+        "detail": "Yellow Card",
+        "comments": "Handling"
+      }
+    ]
+  },
+  {
+    "fixture": {
+      "id": 1223824,
+      "referee": "Mariani, Maurizio, Italy",
+      "timezone": "UTC",
+      "date": "2025-02-01T14:00:00+00:00",
+      "timestamp": 1738418400,
+      "periods": {
+        "first": 1738418400,
+        "second": null
+      },
+      "venue": {
+        "id": 20416,
+        "name": "Bluenergy Stadium",
+        "city": "Udine"
+      },
+      "status": {
+        "long": "Halftime",
+        "short": "HT",
+        "elapsed": 45,
+        "extra": 3
+      }
+    },
+    "league": {
+      "id": 135,
+      "name": "Serie A",
+      "country": "Italy",
+      "logo": "https://media.api-sports.io/football/leagues/135.png",
+      "flag": "https://media.api-sports.io/flags/it.svg",
+      "season": 2024,
+      "round": "Regular Season - 23",
+      "standings": true
+    },
+    "teams": {
+      "home": {
+        "id": 494,
+        "name": "Udinese",
+        "logo": "https://media.api-sports.io/football/teams/494.png",
+        "winner": null
+      },
+      "away": {
+        "id": 517,
+        "name": "Venezia",
+        "logo": "https://media.api-sports.io/football/teams/517.png",
+        "winner": null
+      }
+    },
+    "goals": {
+      "home": 0,
+      "away": 0
+    },
+    "score": {
+      "halftime": {
+        "home": 0,
+        "away": 0
+      },
+      "fulltime": {
+        "home": null,
+        "away": null
+      },
+      "extratime": {
+        "home": null,
+        "away": null
+      },
+      "penalty": {
+        "home": null,
+        "away": null
+      }
+    },
+    "events": [
+      {
+        "time": {
+          "elapsed": 19,
+          "extra": null
+        },
+        "team": {
+          "id": 517,
+          "name": "Venezia",
+          "logo": "https://media.api-sports.io/football/teams/517.png"
+        },
+        "player": {
+          "id": 1282,
+          "name": "J. Joronen"
+        },
+        "assist": {
+          "id": 162445,
+          "name": "F. Stankovic"
+        },
+        "type": "subst",
+        "detail": "Substitution 1",
+        "comments": null
+      }
+    ]
+  }
+]

@@ -11,7 +11,7 @@ export default function MatchTimeline({ game }: MatchProps) {
   return (
     <div className="timeline-container mx-auto flex w-full flex-col gap-6 rounded-lg bg-[#f0efef] pb-6 pt-3 drop-shadow-xl dark:bg-[#202020]">
       <div className="flex items-center justify-center">
-        <p className="mx-2 px-3 py-2 font-heading text-sm text-black">
+        <p className="mx-2 px-3 py-2 font-heading text-sm text-black dark:text-white">
           Match Start
         </p>
       </div>
@@ -93,7 +93,7 @@ function EventDetails({ event }: { event: Event }) {
     <>
       {/* Player Name */}
       <p
-        className={`font-heading text-base ${event.type === "subst" && event.assist?.name ? "text-green-600" : "text-black"}`} // green text for incoming player in substitution
+        className={`font-heading text-base ${event.type === "subst" && event.assist?.name ? "text-green-600" : "text-black dark:text-white"}`} // green text for incoming player in substitution
       >
         {event.player.name}
       </p>

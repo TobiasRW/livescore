@@ -30,7 +30,7 @@ export default async function MatchPage({
         <div className="mx-auto grid h-full w-11/12 grid-cols-3 items-center justify-center">
           <Link
             href="/"
-            className="flex items-center justify-self-start rounded-full bg-white p-2"
+            className="flex items-center justify-self-start rounded-full bg-white p-2 text-black"
           >
             <ArrowLeft size={16} />
           </Link>

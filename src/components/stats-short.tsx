@@ -47,7 +47,7 @@ export default function ShortStats({ game }: MatchProps) {
             <p className="text-center">Possession</p>
             <p className="text-right font-medium">{awayPossession}</p>
           </div>
-          <div className="relative mt-2 h-2 w-full overflow-hidden rounded-full bg-gray-300">
+          <div className="relative mt-2 h-2 w-full overflow-hidden rounded-full">
             <div
               className="absolute left-0 h-full bg-blue"
               style={{ width: homePossession }}

@@ -8,7 +8,7 @@ interface MatchProps {
 // Main MatchCard Component
 export default function MatchCard({ game }: MatchProps) {
   return (
-    <div className="match-card mx-auto -mt-8 flex w-11/12 flex-col gap-12 rounded-lg bg-[#f0efef] py-4 drop-shadow-xl">
+    <div className="match-card mx-auto -mt-8 flex w-11/12 flex-col gap-12 rounded-lg bg-[#f0efef] py-4 drop-shadow-xl dark:bg-[#202020]">
       {/* Teams & Score top display */}
       <MatchScore game={game} />
 

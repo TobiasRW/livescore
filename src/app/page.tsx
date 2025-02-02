@@ -9,14 +9,8 @@ export default async function Home() {
 
   return (
     <div>
-      <div className="flex h-32 flex-col items-center justify-center gap-4 rounded-b-3xl bg-[#1D3461]">
+      <div className="flex h-36 flex-col items-center justify-center gap-4 rounded-b-3xl bg-[#1D3461]">
         <div className="flex items-center justify-center gap-4">
-          <Image
-            src="/pl.svg"
-            alt="Premier League Logo"
-            width={20}
-            height={20}
-          />
           <h1 className="text-3xl text-white">Live Scores</h1>
         </div>
       </div>

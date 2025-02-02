@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Timeline from "@/components/match-timeline";
 import ShortStats from "@/components/stats-short";
+import FullStats from "@/components/match-stats";
+import Lineups from "@/components/match-lineups";
 import { Match } from "@/types/match";
 
 interface MatchFilterProps {
@@ -29,9 +31,9 @@ export default function Filter({ game }: MatchFilterProps) {
           </div>
         );
       case "Stats":
-        return null;
+        return <FullStats game={game} />;
       case "Line-ups":
-        return null;
+        return <Lineups game={game} />;
       default:
         return null;
     }

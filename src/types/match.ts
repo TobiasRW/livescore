@@ -21,6 +21,27 @@ export interface TeamStatistics {
   statistics: Statistic[];
 }
 
+export interface Player {
+  id: number;
+  number: number;
+  name: string;
+  pos: string;
+}
+
+export interface Coach {
+  id: number;
+  name: string;
+  photo: string;
+}
+
+export interface Lineup {
+  team: Team;
+  formation: string;
+  startXI: { player: Player }[];
+  substitutes: { player: Player }[];
+  coach: Coach;
+}
+
 export interface Event {
   time: {
     elapsed: number;
@@ -58,6 +79,7 @@ export interface Match {
     away: number | null;
   };
   statistics?: TeamStatistics[];
+  lineups?: Lineup[];
   events: {
     time: {
       elapsed: number;

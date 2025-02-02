@@ -19,7 +19,20 @@ export default function MatchCard({ game }: MatchProps) {
 
         {/* Middle Separator Image */}
         <div className="flex items-start justify-center">
-          <Image src="/ball.svg" alt="Ball" width={20} height={20} />
+          <Image
+            src="/ball.svg"
+            alt="Ball"
+            width={20}
+            height={20}
+            className="dark:hidden"
+          />
+          <Image
+            src="/ball-white.svg"
+            alt="Ball"
+            width={20}
+            height={20}
+            className="hidden dark:block"
+          />
         </div>
 
         {/* Away Team Goals */}

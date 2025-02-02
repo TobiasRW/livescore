@@ -5,35 +5,20 @@ interface MatchProps {
 }
 
 export default function ShortStats({ game }: MatchProps) {
-  const homePossession =
-    game.statistics
-      ?.find((stat) => stat.team.id === game.teams.home.id)
-      ?.statistics.find((s) => s.type === "Ball Possession")?.value || "0%";
+  const getStat = (teamId: number, statType: string) => {
+    return (
+      game.statistics
+        ?.find((stat) => stat.team.id === teamId)
+        ?.statistics.find((s) => s.type === statType)?.value || "0"
+    );
+  };
 
-  const awayPossession =
-    game.statistics
-      ?.find((stat) => stat.team.id === game.teams.away.id)
-      ?.statistics.find((s) => s.type === "Ball Possession")?.value || "0%";
-
-  const homeShotsOffGoal =
-    game.statistics
-      ?.find((stat) => stat.team.id === game.teams.home.id)
-      ?.statistics.find((s) => s.type === "Shots off Goal")?.value || "0";
-
-  const awayShotsOffGoal =
-    game.statistics
-      ?.find((stat) => stat.team.id === game.teams.away.id)
-      ?.statistics.find((s) => s.type === "Shots off Goal")?.value || "0";
-
-  const homeShotsOnGoal =
-    game.statistics
-      ?.find((stat) => stat.team.id === game.teams.home.id)
-      ?.statistics.find((s) => s.type === "Shots on Goal")?.value || "0";
-
-  const awayShotsOnGoal =
-    game.statistics
-      ?.find((stat) => stat.team.id === game.teams.away.id)
-      ?.statistics.find((s) => s.type === "Shots on Goal")?.value || "0";
+  const homePossession = getStat(game.teams.home.id, "Ball Possession");
+  const awayPossession = getStat(game.teams.away.id, "Ball Possession");
+  const homeShotsOffGoal = getStat(game.teams.home.id, "Shots off Goal");
+  const awayShotsOffGoal = getStat(game.teams.away.id, "Shots off Goal");
+  const homeShotsOnGoal = getStat(game.teams.home.id, "Shots on Goal");
+  const awayShotsOnGoal = getStat(game.teams.away.id, "Shots on Goal");
 
   const homeShots = Number(homeShotsOffGoal) + Number(homeShotsOnGoal);
   const awayShots = Number(awayShotsOffGoal) + Number(awayShotsOnGoal);
@@ -43,9 +28,9 @@ export default function ShortStats({ game }: MatchProps) {
       <div className="mx-auto flex w-11/12 flex-col gap-4 font-heading text-lg">
         <div className="">
           <div className="grid w-full grid-cols-3 items-center">
-            <p className="text-left font-medium">{homePossession}</p>
+            <p className="text-left">{homePossession}</p>
             <p className="text-center">Possession</p>
-            <p className="text-right font-medium">{awayPossession}</p>
+            <p className="text-right">{awayPossession}</p>
           </div>
           <div className="relative mt-2 h-2 w-full overflow-hidden rounded-full">
             <div
@@ -59,14 +44,14 @@ export default function ShortStats({ game }: MatchProps) {
           </div>
         </div>
         <div className="grid grid-cols-3 items-center">
-          <p className="text-left font-medium">{homeShots}</p>
+          <p className="text-left">{homeShots}</p>
           <p className="text-center">Total shots</p>
-          <p className="text-right font-medium">{awayShots}</p>
+          <p className="text-right">{awayShots}</p>
         </div>
         <div className="grid grid-cols-3 items-center">
-          <p className="text-left font-medium">{homeShotsOnGoal}</p>
+          <p className="text-left">{homeShotsOnGoal}</p>
           <p className="text-center">Shots on Goal</p>
-          <p className="text-right font-medium">{awayShotsOnGoal}</p>
+          <p className="text-right">{awayShotsOnGoal}</p>
         </div>
       </div>
     </div>

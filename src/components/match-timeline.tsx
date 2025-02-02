@@ -77,11 +77,11 @@ function MatchEvent({
 function HalfTimeSeparator() {
   return (
     <div className="mb-8 mt-4 flex items-center">
-      <div className="h-[1px] w-full bg-black"></div>
-      <p className="mx-2 rounded-full border border-black px-3 py-2 font-heading text-sm text-black">
+      <div className="h-[1px] w-full bg-black dark:bg-white"></div>
+      <p className="mx-2 rounded-full border border-black px-3 py-2 font-heading text-sm text-black dark:border-white dark:text-white">
         HT
       </p>
-      <div className="h-[1px] w-full bg-black"></div>
+      <div className="h-[1px] w-full bg-black dark:bg-white"></div>
     </div>
   );
 }
@@ -93,7 +93,7 @@ function EventDetails({ event }: { event: Event }) {
     <>
       {/* Player Name */}
       <p
-        className={`font-heading text-base ${event.type === "subst" && event.assist?.name ? "text-green-600" : "text-black dark:text-white"}`} // green text for incoming player in substitution
+        className={`font-heading text-base ${event.type === "subst" && event.assist?.name ? "text-green-600 dark:text-green-700" : "text-black dark:text-white"}`} // green text for incoming player in substitution
       >
         {event.player.name}
       </p>
@@ -127,13 +127,22 @@ function getEventIcon(event: Event) {
   switch (event.type) {
     case "Goal":
       return (
-        <Image
-          src="/ball.svg"
-          alt="Goal"
-          width={20}
-          height={20}
-          className="w-4"
-        />
+        <>
+          <Image
+            src="/ball.svg"
+            alt="Goal"
+            width={20}
+            height={20}
+            className="w-4 dark:hidden"
+          />
+          <Image
+            src="/ball-white.svg"
+            alt="Goal"
+            width={20}
+            height={20}
+            className="hidden w-4 dark:block"
+          />
+        </>
       );
 
     case "Card":
@@ -154,7 +163,7 @@ function getEventIcon(event: Event) {
             className={`w-4 ${event.team.id ? "rotate-180" : ""} transform`}
           />
           {/* Display the player being substituted with red text */}
-          <p className="font-heading text-base text-red-600">
+          <p className="font-heading text-base text-red-600 dark:text-red-700">
             {event.assist?.name}
           </p>
         </div>

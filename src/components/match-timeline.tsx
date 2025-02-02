@@ -9,7 +9,12 @@ interface MatchProps {
 // This component maps over the events of the match and renders each one using the MatchEvent component.
 export default function MatchTimeline({ game }: MatchProps) {
   return (
-    <div className="timeline-container mx-auto flex w-11/12 flex-col gap-6 rounded-lg bg-[#f0efef] py-6 drop-shadow-xl dark:bg-[#202020]">
+    <div className="timeline-container mx-auto flex w-full flex-col gap-6 rounded-lg bg-[#f0efef] pb-6 pt-3 drop-shadow-xl dark:bg-[#202020]">
+      <div className="flex items-center justify-center">
+        <p className="mx-2 px-3 py-2 font-heading text-sm text-black">
+          Match Start
+        </p>
+      </div>
       <div className="timeline-content mx-auto flex w-10/12 flex-col gap-4">
         {game.events.map((event, index) => (
           <MatchEvent

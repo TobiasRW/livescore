@@ -11,6 +11,16 @@ export interface FixtureStatus {
   extra?: number | null;
 }
 
+export interface Statistic {
+  type: string;
+  value: string | number;
+}
+
+export interface TeamStatistics {
+  team: Team;
+  statistics: Statistic[];
+}
+
 export interface Event {
   time: {
     elapsed: number;
@@ -47,6 +57,7 @@ export interface Match {
     home: number | null;
     away: number | null;
   };
+  statistics?: TeamStatistics[];
   events: {
     time: {
       elapsed: number;

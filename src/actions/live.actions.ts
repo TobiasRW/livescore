@@ -66,6 +66,7 @@ export async function getMatchDetails(
     }
 
     const data = await response.json();
+    // console.log(data);
     return { response: data.response || [] }; // Ensures a valid array is always returned
   } catch (error) {
     console.error("Error in getMatchDetails:", error);

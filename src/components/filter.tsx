@@ -5,14 +5,17 @@ import Timeline from "@/components/match-timeline";
 import ShortStats from "@/components/stats-short";
 import FullStats from "@/components/match-stats";
 import Lineups from "@/components/match-lineups";
+import Standings from "@/components/standings";
 import { Match } from "@/types/match";
+import { StandingsTable } from "@/types/standings"; // Import the type
 
 interface MatchFilterProps {
   game: Match | undefined;
+  standings: StandingsTable[];
 }
 
-export default function Filter({ game }: MatchFilterProps) {
-  type FilterType = "Timeline" | "Stats" | "Line-ups";
+export default function Filter({ game, standings }: MatchFilterProps) {
+  type FilterType = "Timeline" | "Stats" | "Line-ups" | "Table";
   const [activeFilter, setActiveFilter] = useState<FilterType>("Timeline");
 
   // Render the selected content
@@ -34,6 +37,8 @@ export default function Filter({ game }: MatchFilterProps) {
         return <FullStats game={game} />;
       case "Line-ups":
         return <Lineups game={game} />;
+      case "Table":
+        return <Standings standings={standings} />;
       default:
         return null;
     }
@@ -42,13 +47,13 @@ export default function Filter({ game }: MatchFilterProps) {
   return (
     <div className="mx-auto flex w-11/12 flex-col gap-8">
       {/* Filter Buttons */}
-      <div className="flex justify-between gap-4 text-center">
+      <div className="flex justify-between gap-2 text-center">
         <button
           className={`${
             activeFilter === "Timeline"
               ? "bg-blue text-white"
               : "bg-[#f0efef] text-black dark:bg-[#202020] dark:text-white"
-          } w-1/3 rounded-full px-4 py-2 drop-shadow-xl`}
+          } xs:px-3 xs:text-sm w-1/3 rounded-full px-2 py-2 text-xs drop-shadow-xl`}
           onClick={() => setActiveFilter("Timeline")}
         >
           Timeline
@@ -58,7 +63,7 @@ export default function Filter({ game }: MatchFilterProps) {
             activeFilter === "Stats"
               ? "bg-blue text-white"
               : "bg-[#f0efef] text-black dark:bg-[#202020] dark:text-white"
-          } w-1/3 rounded-full px-4 py-2 drop-shadow-xl`}
+          } xs:px-3 xs:text-sm w-1/3 rounded-full px-2 py-2 text-xs drop-shadow-xl`}
           onClick={() => setActiveFilter("Stats")}
         >
           Stats
@@ -68,10 +73,20 @@ export default function Filter({ game }: MatchFilterProps) {
             activeFilter === "Line-ups"
               ? "bg-blue text-white"
               : "bg-[#f0efef] text-black dark:bg-[#202020] dark:text-white"
-          } w-1/3 rounded-full px-4 py-2 drop-shadow-xl`}
+          } xs:px-3 xs:text-sm w-1/3 rounded-full px-2 py-2 text-xs drop-shadow-xl`}
           onClick={() => setActiveFilter("Line-ups")}
         >
           Line-ups
+        </button>
+        <button
+          className={`${
+            activeFilter === "Table"
+              ? "bg-blue text-white"
+              : "bg-[#f0efef] text-black dark:bg-[#202020] dark:text-white"
+          } xs:px-3 xs:text-sm w-1/3 rounded-full px-2 py-2 text-xs drop-shadow-xl`}
+          onClick={() => setActiveFilter("Table")}
+        >
+          Table
         </button>
       </div>
 

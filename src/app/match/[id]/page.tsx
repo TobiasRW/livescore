@@ -1,10 +1,13 @@
 // import match from "../../data/match.json";
 import { Match } from "@/types/match";
+import { StandingsData } from "@/types/standings"; // Import the type
 import { getMatchDetails } from "@/actions/live.actions";
 import Score from "@/components/match-score";
 import Filter from "@/components/filter";
 import Link from "next/link";
 import { ArrowLeft } from "@phosphor-icons/react/dist/ssr";
+import { getStandings } from "@/actions/standings.actions";
+import { leagueIdToCode } from "@/app/utils/leagues"; // Import the mapping
 
 export default async function MatchPage({
   params,
@@ -16,6 +19,17 @@ export default async function MatchPage({
   const data = await getMatchDetails(fixture);
 
   const game: Match | undefined = data?.response?.[0];
+
+  // Extract the league ID from the match API response
+  const leagueId = game.league.id;
+
+  // Convert the league ID to a league code for the standings API
+  const leagueCode = leagueIdToCode[leagueId];
+
+  // Fetch the correct standings if the league code is found
+  const standings = leagueCode
+    ? (await getStandings(leagueCode)).response?.standings?.[0]?.table || []
+    : [];
 
   // const game = match.find((match) => match.fixture.id === parseInt(params.id));
 
@@ -45,7 +59,7 @@ export default async function MatchPage({
         <Score game={game} />
 
         {/* Filter */}
-        <Filter game={game} />
+        <Filter game={game} standings={standings} />
       </div>
     </div>
   );

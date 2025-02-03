@@ -169,6 +169,22 @@ function getEventIcon(event: Event) {
         </div>
       );
 
+    case "Var":
+      return (
+        <div className="flex items-center gap-2">
+          <Image
+            src="/VAR.svg"
+            alt="VAR"
+            width={20}
+            height={20}
+            className="w-6"
+          />
+          <p className="text-xs italic text-black dark:text-white">
+            {event.detail}
+          </p>
+        </div>
+      );
+
     default:
       return null;
   }

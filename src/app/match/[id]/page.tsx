@@ -1,4 +1,3 @@
-// import match from "../../data/match.json";
 import { Match } from "@/types/match";
 import { getMatchDetails } from "@/actions/live.actions";
 import Score from "@/components/match-score";
@@ -13,24 +12,22 @@ export default async function MatchPage({
 }: {
   params: { id: string };
 }) {
-  const { id } = await params;
-  const fixture = parseInt(id);
-  const data = await getMatchDetails(fixture);
+  const { id } = await params; // get the fixture ID from the URL
+  const fixture = parseInt(id); // convert the ID to a number
+  const data = await getMatchDetails(fixture); // fetch the match details
 
-  const game: Match | undefined = data?.response?.[0];
+  const game: Match | undefined = data?.response?.[0]; // extract the first match from the response
 
   // Extract the league ID from the match API response
   const leagueId = game.league.id;
 
-  // Convert the league ID to a league code for the standings API
+  // Convert the league ID from The football api to the league code used in the standings API
   const leagueCode = leagueIdToCode[leagueId];
 
   // Fetch the correct standings if the league code is found
   const standings = leagueCode
-    ? (await getStandings(leagueCode)).response?.standings?.[0]?.table || []
-    : [];
-
-  // const game = match.find((match) => match.fixture.id === parseInt(params.id));
+    ? { standings: (await getStandings(leagueCode)).response.standings }
+    : { standings: [] }; // If the league code is not found, return an empty array
 
   if (!game) {
     return <div className="text-center text-red-500">Match not found!</div>;

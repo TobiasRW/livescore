@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import Timeline from "@/components/match-timeline";
 import ShortStats from "@/components/stats-short";
@@ -7,11 +6,12 @@ import FullStats from "@/components/match-stats";
 import Lineups from "@/components/match-lineups";
 import Standings from "@/components/standings";
 import { Match } from "@/types/match";
-import { StandingsTable } from "@/types/standings"; // Import the type
+import { Table } from "@/types/standings";
 
+// Define the props for the component
 interface MatchFilterProps {
   game: Match | undefined;
-  standings: StandingsTable[];
+  standings: Table;
 }
 
 export default function Filter({ game, standings }: MatchFilterProps) {

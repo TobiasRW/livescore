@@ -1,12 +1,13 @@
 import Image from "next/image";
-import { StandingsTable } from "@/types/standings"; // Import the new type
+import { Table } from "@/types/standings"; // Import the Table type
 
+// Define the props for the component
 interface StandingsProps {
-  standings: StandingsTable[];
+  standings: Table;
 }
 
 export default function Standings({ standings }: StandingsProps) {
-  if (!standings || standings.length === 0) {
+  if (!standings || standings.standings.length === 0) {
     return <p>No standings data available for this league</p>;
   }
 
@@ -23,7 +24,7 @@ export default function Standings({ standings }: StandingsProps) {
         </div>
       </div>
       <div className="mx-auto flex w-full flex-col gap-4 px-5 font-heading">
-        {standings.map((team) => (
+        {standings.standings.map((team) => (
           <div key={team.team.id} className="flex justify-between">
             <div className="flex gap-2">
               <p className="w-4">{team.position}</p>

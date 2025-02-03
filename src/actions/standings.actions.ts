@@ -1,5 +1,5 @@
 "use server";
-import { ApiResponse } from "@/types/standings"; // Importing the types we need
+import { ApiResponse, Table } from "@/types/standings"; // Importing the types we need
 
 export async function getStandings(league: string): Promise<ApiResponse> {
   try {
@@ -31,10 +31,13 @@ export async function getStandings(league: string): Promise<ApiResponse> {
     // Parse the response as JSON
     const data = await response.json();
 
+    // Extract the standings from the response
+    const table: Table = { standings: data.standings[0]?.table || [] };
+
     // Return the standings. Repsonse is wrapped in an object to match the ApiResponse type
-    return { response: data };
+    return { response: table };
   } catch (error) {
     console.log("Error in getStandings", error);
-    return { response: [] };
+    return { response: { standings: [] } };
   }
 }

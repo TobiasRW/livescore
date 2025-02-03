@@ -23,6 +23,9 @@ export interface StandingsTable {
   goalDifference: number; // The goal difference
 }
 
+export interface Table {
+  standings: StandingsTable[];
+}
 export interface ApiResponse {
-  response: StandingsTable[];
+  response: Table;
 }

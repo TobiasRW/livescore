@@ -2,6 +2,8 @@ import { Match } from "@/types/match";
 import { getLiveScores } from "../actions/live.actions";
 import MatchCard from "@/components/match-card";
 
+export const revalidate = 0; // // revalidate on page refresh
+
 export default async function Home() {
   const data = await getLiveScores(); // Fetch live match data from the API
 

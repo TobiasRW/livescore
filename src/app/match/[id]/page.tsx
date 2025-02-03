@@ -10,7 +10,7 @@ import { leagueIdToCode } from "@/app/utils/leagues"; // Import the mapping
 export default async function MatchPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
   const { id } = await params; // get the fixture ID from the URL
   const fixture = parseInt(id); // convert the ID to a number

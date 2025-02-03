@@ -21,7 +21,16 @@ export default function MatchCard({ match }: MatchCardProps) {
       {/* Match Elapsed Time */}
       <div className="">
         <p className="text-center font-body text-xl text-blueSec">
-          {match.fixture.status.elapsed}'
+          {match.fixture.status.short === "HT"
+            ? "HT"
+            : match.fixture.status.short === "FT"
+              ? "FT"
+              : `${match.fixture.status.elapsed ?? 0}'`}{" "}
+          {match.fixture.status.short !== "HT" &&
+            match.fixture.status.short !== "FT" &&
+            match.fixture.status.extra && (
+              <span className="text-xs">+{match.fixture.status.extra}</span>
+            )}
         </p>
       </div>
 

@@ -28,9 +28,9 @@ export interface TeamStatistics {
 
 // Interface to represent a player
 export interface Player {
-  id: number; // The player id
+  id?: number | null; // The player id
   number?: number; // The player's shirt number
-  name: string; // The player's name
+  name?: string | null; // The player's name
   pos?: string; // The player's position
 }
 

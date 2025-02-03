@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Match, Event } from "@/types/match";
+import { Match } from "@/types/match";
 
 interface MatchProps {
   game: Match;

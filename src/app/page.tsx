@@ -1,10 +1,12 @@
-import Image from "next/image";
 import { Match } from "@/types/match";
 import { getLiveScores } from "../actions/live.actions";
 import MatchCard from "@/components/match-card";
 
 export default async function Home() {
-  const data = await getLiveScores();
+  const data = await getLiveScores(); // Fetch live match data from the API
+
+  // matches is type Match[] (array of matches) from the Match interface. Default to empty array in case of falsy value
+  // saves the response data from the API to the matches variable
   const matches: Match[] = data?.response || [];
 
   return (
@@ -17,10 +19,12 @@ export default async function Home() {
       {/* Matches List */}
       <div className="mx-auto flex w-11/12 flex-col gap-8 pt-8">
         {matches.length > 0 ? (
+          // If live matches are available, display them
           matches.map((match: Match) => (
             <MatchCard key={match.fixture.id} match={match} />
           ))
         ) : (
+          // If no live matches are available, display this message
           <div className="">
             <p className="text-center text-gray-500">
               No live matches currently available. Come back later!

@@ -22,3 +22,7 @@ export interface StandingsTable {
   goalsAgainst: number; // The number of goals conceded
   goalDifference: number; // The goal difference
 }
+
+export interface ApiResponse {
+  response: StandingsTable[];
+}

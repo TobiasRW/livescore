@@ -2,11 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { Match } from "@/types/match";
 
-interface MatchCardProps {
+// Define the props for the 'MatchCard' component.
+// 'match' must be of type 'Match' (a single match object).
+type MatchCardProps = {
   match: Match;
-}
+};
 
-// Match Card for displaying live matches on the home page
+// Match Card for displaying a live match on the home page
 export default function MatchCard({ match }: MatchCardProps) {
   return (
     <Link

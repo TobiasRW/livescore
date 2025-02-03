@@ -1,6 +1,5 @@
 // import match from "../../data/match.json";
 import { Match } from "@/types/match";
-import { StandingsData } from "@/types/standings"; // Import the type
 import { getMatchDetails } from "@/actions/live.actions";
 import Score from "@/components/match-score";
 import Filter from "@/components/filter";

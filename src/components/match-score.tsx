@@ -89,7 +89,7 @@ function MatchStatus({
         ? "HT"
         : status.short === "FT"
           ? "FT"
-          : `${status.elapsed ?? 0}'`}{" "}
+          : `${status.elapsed ?? 0}′`}
       {status.short !== "HT" && status.short !== "FT" && status.extra && (
         <span className="text-xs">+{status.extra}</span>
       )}
@@ -128,7 +128,7 @@ function MatchGoals({
           )}
           {/* Time of Goal (always displayed towards the middle) */}
           <span className="font-heading text-[#999999]">
-            {event.time.elapsed}'
+            {event.time.elapsed}&#39;
           </span>
           {/* Away Team */}
           {!isHome && (

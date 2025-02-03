@@ -12,7 +12,9 @@ export default function MatchLineups({ game }: MatchProps) {
     (lineup) => lineup.team.id === game.teams.away.id,
   );
 
-  const shortenName = (fullName: string): string => {
+  const shortenName = (fullName: string | null | undefined): string => {
+    if (!fullName) return "";
+
     const nameParts = fullName.split(" ");
     return nameParts.length > 1
       ? `${nameParts[0][0]}. ${nameParts.slice(1).join(" ")}`

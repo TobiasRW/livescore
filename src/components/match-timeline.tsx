@@ -113,7 +113,7 @@ function EventTime({
 }) {
   return (
     <p className="flex gap-1 font-heading text-[#999999]">
-      {time.elapsed}'
+      {time.elapsed}&#39;
       {time.extra !== null && time.extra !== undefined && (
         <span className="mt-[2px] text-xs">+{time.extra}</span>
       )}

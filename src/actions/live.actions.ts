@@ -35,7 +35,9 @@ export async function getLiveScores(): Promise<ApiResponse> {
     const data = await response.json();
 
     // An array of specific league id's
-    const leagues = [39, 40, 2, 3, 848, 135, 140, 78, 1, 4, 61, 119, 94];
+    const leagues = [
+      39, 40, 2, 3, 848, 135, 140, 78, 1, 4, 61, 119, 94, 45, 48, 143, 81, 90,
+    ];
 
     // Filter the live scores to only include matches from the leagues array
     const liveScores = data.response.filter((match: Match) =>

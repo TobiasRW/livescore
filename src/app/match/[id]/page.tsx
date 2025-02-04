@@ -36,21 +36,21 @@ export default async function MatchPage({
   return (
     <div className="pb-10">
       {/* Match Header */}
-      <div className="h-36 rounded-b-3xl bg-[#1D3461]">
-        <div className="mx-auto grid h-full w-11/12 grid-cols-3 items-center justify-center">
+      <div className="h-36 rounded-b-3xl bg-[#1D3461] sm:h-56">
+        <div className="mx-auto grid h-full w-11/12 max-w-[500px] grid-cols-3 items-center justify-center">
           <Link
             href="/"
             className="flex items-center justify-self-start rounded-full bg-white p-2 text-black"
           >
             <ArrowLeft size={16} />
           </Link>
-          <h1 className="justify-self-center text-nowrap text-center text-3xl text-white">
+          <h1 className="justify-self-center text-nowrap text-center text-3xl text-white sm:text-4xl">
             Match Details
           </h1>
         </div>
       </div>
 
-      <div className="flex flex-col gap-8">
+      <div className="mx-auto flex max-w-[500px] flex-col gap-8">
         {/* Match Score & Goals */}
         <Score game={game} />
 

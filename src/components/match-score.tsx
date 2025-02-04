@@ -52,12 +52,12 @@ function MatchScore({ game }: { game: Match }) {
         alt={`${game.teams.home.name} logo`}
         width={30}
         height={30}
-        className="w-10"
+        className="w-10 sm:w-14"
       />
 
       {/* Score Display */}
       <div className="-mb-7 flex flex-col items-center justify-center gap-2">
-        <p className="flex gap-1 font-heading text-3xl">
+        <p className="flex gap-1 font-heading text-3xl sm:text-4xl">
           {game.goals.home} - {game.goals.away}
         </p>
 
@@ -71,7 +71,7 @@ function MatchScore({ game }: { game: Match }) {
         alt={`${game.teams.away.name} logo`}
         width={30}
         height={30}
-        className="w-10"
+        className="w-10 sm:w-14"
       />
     </div>
   );
@@ -84,7 +84,7 @@ function MatchStatus({
   status: { short: string; elapsed?: number | null; extra?: number | null };
 }) {
   return (
-    <p className="flex gap-1 font-body text-sm font-light italic">
+    <p className="flex gap-1 font-body text-sm font-light italic sm:text-base">
       {status.short === "HT"
         ? "HT"
         : status.short === "FT"
@@ -124,10 +124,12 @@ function MatchGoals({
         <div key={index} className="flex items-center gap-2">
           {/* Home Team */}
           {isHome && (
-            <p className="font-heading text-base">{event.player.name}</p>
+            <p className="font-heading text-base sm:text-lg">
+              {event.player.name}
+            </p>
           )}
           {/* Time of Goal (always displayed towards the middle) */}
-          <span className="font-heading text-[#999999]">
+          <span className="font-heading text-[#999999] sm:text-lg">
             {event.time.elapsed}&#39;
           </span>
           {/* Away Team */}

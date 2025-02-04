@@ -30,18 +30,18 @@ export default function MatchLineups({ game }: MatchProps) {
         {/* Home team */}
         <div className="flex flex-1 flex-col gap-4 text-left">
           <div className="">
-            <h4 className="mb-2 underline">Coach</h4>
+            <h4 className="mb-2 underline sm:text-xl">Coach</h4>
             <p className="mt-1 font-body text-sm font-light italic">
               {homeLineup?.coach.name}
             </p>
           </div>
           <div className="">
-            <h4 className="mb-2 underline">Starting 11</h4>
+            <h4 className="mb-2 underline sm:text-xl">Starting 11</h4>
             <ul className="mt-1">
               {homeLineup?.startXI.map((player) => (
                 <li
                   key={player.player.id}
-                  className="flex gap-4 font-body text-sm font-light italic"
+                  className="flex gap-4 font-body text-sm font-light italic sm:text-base"
                 >
                   <p className="w-3 font-heading text-base not-italic">
                     {player.player.number}
@@ -52,12 +52,12 @@ export default function MatchLineups({ game }: MatchProps) {
             </ul>
           </div>
           <div className="">
-            <h4 className="mb-2 underline">Substitutes</h4>
+            <h4 className="mb-2 underline sm:text-xl">Substitutes</h4>
             <ul>
               {homeSubs?.map((player) => (
                 <li
                   key={player.player.id}
-                  className="mt-1 flex gap-4 font-body text-sm font-light italic"
+                  className="mt-1 flex gap-4 font-body text-sm font-light italic sm:text-base"
                 >
                   <p className="w-3 font-heading text-base not-italic">
                     {player.player.number}
@@ -71,18 +71,18 @@ export default function MatchLineups({ game }: MatchProps) {
         {/* Away team */}
         <div className="flex flex-1 flex-col gap-4 text-right">
           <div className="text-right">
-            <h4 className="mb-2 underline">Coach</h4>
-            <p className="mt-1 font-body text-sm font-light italic">
+            <h4 className="mb-2 underline sm:text-xl">Coach</h4>
+            <p className="mt-1 font-body text-sm font-light italic sm:text-base">
               {awayLineup?.coach.name}
             </p>
           </div>
           <div className="">
-            <h4 className="mb-2 underline">Starting 11</h4>
+            <h4 className="mb-2 underline sm:text-xl">Starting 11</h4>
             <ul className="mt-1">
               {awayLineup?.startXI.map((player) => (
                 <li
                   key={player.player.id}
-                  className="flex justify-end gap-4 font-body text-sm font-light italic"
+                  className="flex justify-end gap-4 font-body text-sm font-light italic sm:text-base"
                 >
                   <p>{shortenName(player.player.name)}</p>
                   <p className="w-3 font-heading text-base not-italic">
@@ -93,15 +93,15 @@ export default function MatchLineups({ game }: MatchProps) {
             </ul>
           </div>
           <div className="">
-            <h4 className="mb-2 underline">Substitutes</h4>
+            <h4 className="mb-2 underline sm:text-xl">Substitutes</h4>
             <ul>
               {awaySubs?.map((player) => (
                 <li
                   key={player.player.id}
-                  className="mt-1 flex justify-end gap-4 font-body text-sm font-light italic"
+                  className="mt-1 flex justify-end gap-4 font-body text-sm font-light italic sm:text-base"
                 >
                   <p>{shortenName(player.player.name)}</p>
-                  <p className="w-3 font-heading text-base not-italic">
+                  <p className="w-3 font-heading text-base not-italic sm:text-base">
                     {player.player.number}
                   </p>{" "}
                 </li>

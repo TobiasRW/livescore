@@ -53,7 +53,7 @@ export default function Filter({ game, standings }: MatchFilterProps) {
             activeFilter === "Timeline"
               ? "bg-blue text-white"
               : "bg-[#f0efef] text-black dark:bg-[#202020] dark:text-white"
-          } xs:px-3 xs:text-sm w-1/3 rounded-full px-2 py-2 text-xs drop-shadow-xl`}
+          } w-1/3 rounded-full px-2 py-2 text-xs drop-shadow-xl xs:px-3 xs:text-sm sm:text-base`}
           onClick={() => setActiveFilter("Timeline")}
         >
           Timeline
@@ -63,7 +63,7 @@ export default function Filter({ game, standings }: MatchFilterProps) {
             activeFilter === "Stats"
               ? "bg-blue text-white"
               : "bg-[#f0efef] text-black dark:bg-[#202020] dark:text-white"
-          } xs:px-3 xs:text-sm w-1/3 rounded-full px-2 py-2 text-xs drop-shadow-xl`}
+          } w-1/3 rounded-full px-2 py-2 text-xs drop-shadow-xl xs:px-3 xs:text-sm sm:text-base`}
           onClick={() => setActiveFilter("Stats")}
         >
           Stats
@@ -73,7 +73,7 @@ export default function Filter({ game, standings }: MatchFilterProps) {
             activeFilter === "Line-ups"
               ? "bg-blue text-white"
               : "bg-[#f0efef] text-black dark:bg-[#202020] dark:text-white"
-          } xs:px-3 xs:text-sm w-1/3 rounded-full px-2 py-2 text-xs drop-shadow-xl`}
+          } w-1/3 rounded-full px-2 py-2 text-xs drop-shadow-xl xs:px-3 xs:text-sm sm:text-base`}
           onClick={() => setActiveFilter("Line-ups")}
         >
           Line-ups
@@ -83,7 +83,7 @@ export default function Filter({ game, standings }: MatchFilterProps) {
             activeFilter === "Table"
               ? "bg-blue text-white"
               : "bg-[#f0efef] text-black dark:bg-[#202020] dark:text-white"
-          } xs:px-3 xs:text-sm w-1/3 rounded-full px-2 py-2 text-xs drop-shadow-xl`}
+          } w-1/3 rounded-full px-2 py-2 text-xs drop-shadow-xl xs:px-3 xs:text-sm sm:text-base`}
           onClick={() => setActiveFilter("Table")}
         >
           Table

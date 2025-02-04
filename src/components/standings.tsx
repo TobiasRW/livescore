@@ -25,7 +25,10 @@ export default function Standings({ standings }: StandingsProps) {
       </div>
       <div className="mx-auto flex w-full flex-col gap-4 px-5 font-heading">
         {standings.standings.map((team) => (
-          <div key={team.team.id} className="flex justify-between">
+          <div
+            key={team.team.id}
+            className="flex justify-between border-b-[.5px] border-black pb-2 dark:border-white"
+          >
             <div className="flex gap-2">
               <p className="w-4">{team.position}</p>
               <Image

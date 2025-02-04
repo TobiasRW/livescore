@@ -46,9 +46,13 @@ export default function MatchCard({ match }: MatchCardProps) {
               height={30}
               className="w-6"
             />
-            <p className="truncate font-body">{match.teams.home.name}</p>
+            <p className="truncate font-body sm:text-lg">
+              {match.teams.home.name}
+            </p>
           </div>
-          <p>{match.goals.home}</p>
+          <p className="font-heading text-lg font-medium sm:text-xl">
+            {match.goals.home}
+          </p>
         </div>
 
         <hr className="h-[1px] w-11/12 border-none bg-black dark:bg-neutral-600" />
@@ -63,9 +67,13 @@ export default function MatchCard({ match }: MatchCardProps) {
               height={30}
               className="w-6"
             />
-            <p className="truncate font-body">{match.teams.away.name}</p>
+            <p className="truncate font-body sm:text-lg">
+              {match.teams.away.name}
+            </p>
           </div>
-          <p>{match.goals.away}</p>
+          <p className="font-heading text-lg font-medium sm:text-xl">
+            {match.goals.away}
+          </p>
         </div>
       </div>
     </Link>

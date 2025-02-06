@@ -43,15 +43,29 @@ export default async function Home() {
                 No live matches currently available at this time 😢
               </p>
               <p className="mx-auto w-11/12 text-center font-body text-sm font-light italic text-black dark:text-white">
-                To see a demo of the app in action, you can see stats from a
-                previous match.
+                To see a demo of the app in action, you can see stats from
+                previous matches below:
               </p>
-              <Link
-                href="/match/1213921"
-                className="flex items-center rounded-lg bg-[#1D3461] px-4 py-2 font-heading text-sm text-white"
-              >
-                View Demo Match
-              </Link>
+              <div className="flex gap-4">
+                <Link
+                  href="/match/1213921"
+                  className="flex items-center rounded-lg bg-[#1D3461] px-4 py-2 font-heading text-sm text-white"
+                >
+                  Match 1
+                </Link>
+                <Link
+                  href="/match/1223823"
+                  className="flex items-center rounded-lg bg-[#1D3461] px-4 py-2 font-heading text-sm text-white"
+                >
+                  Match 2
+                </Link>
+                <Link
+                  href="/match/1212931"
+                  className="flex items-center rounded-lg bg-[#1D3461] px-4 py-2 font-heading text-sm text-white"
+                >
+                  Match 3
+                </Link>
+              </div>
             </div>
             <div className="flex flex-col items-center gap-4 rounded-lg bg-[#f0efef] py-6 drop-shadow-xl dark:bg-[#202020]">
               <div className="mx-auto w-11/12 font-body text-sm font-medium italic text-black sm:text-base dark:text-white">

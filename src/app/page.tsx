@@ -43,7 +43,7 @@ export default async function Home() {
                 No live matches currently available at this time 😢
               </p>
               <p className="mx-auto w-11/12 text-center font-body text-sm font-light italic text-black dark:text-white">
-                To see a demo of the app i action, you can see stats from a
+                To see a demo of the app in action, you can see stats from a
                 previous match.
               </p>
               <Link

@@ -4,7 +4,7 @@ import MatchCard from "@/components/match-card";
 import Image from "next/image";
 import Link from "next/link";
 
-export const revalidate = 60; // // revalidate the page after 60 seconds
+// export const revalidate = 60;
 
 export default async function Home() {
   const data = await getLiveScores(); // Fetch live match data from the API

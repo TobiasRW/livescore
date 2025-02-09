@@ -24,6 +24,7 @@ export async function getLiveScores(): Promise<ApiResponse> {
         "x-rapidapi-host": "v3.football.api-sports.io",
         "x-rapidapi-key": API_KEY,
       },
+      cache: "no-store",
     });
 
     // If the response is not ok, throw an error
@@ -73,6 +74,7 @@ export async function getMatchDetails(id: number): Promise<ApiResponse> {
         "x-rapidapi-host": "v3.football.api-sports.io",
         "x-rapidapi-key": API_KEY,
       },
+      cache: "no-store",
     });
 
     // If the response is not ok, throw

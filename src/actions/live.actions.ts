@@ -9,7 +9,7 @@ export async function getLiveScores(): Promise<ApiResponse> {
     const url = "https://v3.football.api-sports.io/fixtures?live=all";
 
     // API key for the Football API (stored en environment variable)
-    const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+    const API_KEY = process.env.API_KEY;
 
     // If the API key is missing, throw an error
     if (!API_KEY) {
@@ -59,7 +59,7 @@ export async function getMatchDetails(id: number): Promise<ApiResponse> {
     const url = `https://v3.football.api-sports.io/fixtures?id=${id}`;
 
     // API key for the Football API (stored en environment variable)
-    const API_KEY = process.env.NEXT_PUBLIC_API_KEY;
+    const API_KEY = process.env.API_KEY;
 
     // If the API key is missing, throw
     if (!API_KEY) {

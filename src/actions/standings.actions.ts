@@ -7,7 +7,7 @@ export async function getStandings(league: string): Promise<ApiResponse> {
     const url = `https://api.football-data.org/v4/competitions/${league}/standings`;
 
     // API key for the Football API (stored en environment variable)
-    const API_KEY = process.env.NEXT_PUBLIC_API_TOKEN;
+    const API_KEY = process.env.API_TOKEN;
 
     // If the API key is missing, throw an error
     if (!API_KEY) {
